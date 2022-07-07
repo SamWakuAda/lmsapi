@@ -21,6 +21,11 @@ const LoanSchema = new Schema ({
         type: String,
         required: true
     },
+    //
+    paymentperiod: {
+        type: String,
+        required: false
+    },
     date: {
         type: Date,
         default:Date.now
