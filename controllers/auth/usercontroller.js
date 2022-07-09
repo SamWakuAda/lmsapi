@@ -25,7 +25,7 @@ exports.newUser = async (req, res) => {
         //saving instance to db
         await newUser.save();
         //await user.generateAuthToken();
-        console.log(newUser)
+        //console.log(newUser)
         res.status(201).send({
             data:newUser,
         });
